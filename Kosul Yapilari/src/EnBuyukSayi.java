@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class EnBuyukSayi {
     public static void main(String[] args) {
-        // Amaç: Birden fazla sayıyı karşılaştırmayı öğrenmek
+   
 
         Scanner input = new Scanner(System.in);
 
-        // Kullanıcıdan üç sayı al
+
         System.out.print("1. sayıyı girin: ");
         int sayi1 = input.nextInt();
 
@@ -16,7 +16,7 @@ public class EnBuyukSayi {
         System.out.print("3. sayıyı girin: ");
         int sayi3 = input.nextInt();
 
-        // En büyük sayıyı bul
+
         int enBuyuk;
 
         if (sayi1 >= sayi2 && sayi1 >= sayi3) {
@@ -27,9 +27,8 @@ public class EnBuyukSayi {
             enBuyuk = sayi3;
         }
 
-        // Sonucu yazdır
+
         System.out.println("En büyük sayı: " + enBuyuk);
 
-        input.close();
     }
 }
