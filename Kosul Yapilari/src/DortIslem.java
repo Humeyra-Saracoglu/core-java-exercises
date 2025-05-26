@@ -6,14 +6,14 @@ public class DortIslem {
 
         Scanner input = new Scanner(System.in);
 
-        // Kullanıcıdan iki sayı al
+
         System.out.print("Birinci sayıyı gir: ");
         double sayi1 = input.nextDouble();
 
         System.out.print("İkinci sayıyı gir: ");
         double sayi2 = input.nextDouble();
 
-        // İşlemleri yap
+
         double toplam = sayi1 + sayi2;
         double cikarma = sayi1 - sayi2;
         double carpma = sayi1 * sayi2;
@@ -25,7 +25,7 @@ public class DortIslem {
             bolme = "Tanımsız (sıfıra bölme hatası)";
         }
 
-        // Sonuçları ekrana yazdır
+
         System.out.println("\nİşlem Sonuçları:");
         System.out.println("Toplama: " + toplam);
         System.out.println("Çıkarma: " + cikarma);
