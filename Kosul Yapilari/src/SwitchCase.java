@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class SwitchCase {
     public static void main(String[] args) {
         // Haftanın günleri ....
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Lütfen bir sayı giriniz: ");
