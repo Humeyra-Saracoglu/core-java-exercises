@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DortIslem {
+public class AritmetikIslemler {
     public static void main(String[] args) {
         // Amaç: Toplama, çıkarma, çarpma ve bölme işlemlerini yapmayı öğrenmek
 
