@@ -1,4 +1,5 @@
 public class Main {
+
     public static void main(String[] args) {
         Animal hayvan1 = new Cat();
         Animal hayvan2 = new Dog();
@@ -16,12 +17,12 @@ class Animal {
 
 class Cat extends Animal {
     public void makeSound() {
-        System.out.println("Kedi: Miyav!");
+        System.out.println("Kedi  : Miyavvv!");
     }
 }
 
 class Dog extends Animal {
     public void makeSound() {
-        System.out.println("Köpek: Hav hav!");
+        System.out.println("Köpek : Havv havv!");
     }
 }
