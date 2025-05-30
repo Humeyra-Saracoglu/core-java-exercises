@@ -1,5 +1,5 @@
 public class Encapsulation {
-
+    
     private String marka;
     private String model;
     private int yıl;
