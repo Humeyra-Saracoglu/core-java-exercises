@@ -3,11 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Arrayler/Arrayler.iml" filepath="$PROJECT_DIR$/Arrayler/Arrayler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BEBKA_JAVA/BEBKA_JAVA.iml" filepath="$PROJECT_DIR$/BEBKA_JAVA/BEBKA_JAVA.iml" />
       <module fileurl="file://$PROJECT_DIR$/BEBKA_JAVADA_OOP/BEBKA_JAVADA_OOP.iml" filepath="$PROJECT_DIR$/BEBKA_JAVADA_OOP/BEBKA_JAVADA_OOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/BEBKA_JAVA_Temelleri/BEBKA_JAVA_Temelleri.iml" filepath="$PROJECT_DIR$/BEBKA_JAVA_Temelleri/BEBKA_JAVA_Temelleri.iml" />
       <module fileurl="file://$PROJECT_DIR$/ClasslaraGiris/ClasslaraGiris.iml" filepath="$PROJECT_DIR$/ClasslaraGiris/ClasslaraGiris.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoreJavaExercises.iml" filepath="$PROJECT_DIR$/CoreJavaExercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/Donguler/Donguler.iml" filepath="$PROJECT_DIR$/Donguler/Donguler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Helin_/Helin_.iml" filepath="$PROJECT_DIR$/Helin_/Helin_.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kosul Yapilari/Kosul Yapilari.iml" filepath="$PROJECT_DIR$/Kosul Yapilari/Kosul Yapilari.iml" />
       <module fileurl="file://$PROJECT_DIR$/Metotlar/Metotlar.iml" filepath="$PROJECT_DIR$/Metotlar/Metotlar.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tur Donusumleri/Tur Donusumleri.iml" filepath="$PROJECT_DIR$/Tur Donusumleri/Tur Donusumleri.iml" />
