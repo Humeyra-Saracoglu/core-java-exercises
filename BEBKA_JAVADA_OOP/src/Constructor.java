@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-public class Car2 {
+public class Constructor {
 
     String marka;
     String model;
     int yıl;
 
     // Constructor
-    public Car2(String marka, String model, int yıl) {
+    public Constructor(String marka, String model, int yıl) {
         this.marka = marka;
         this.model = model;
         this.yıl = yıl;
@@ -31,7 +31,7 @@ public class Car2 {
         System.out.print("Yıl giriniz    : ");
         int yıl = scanner.nextInt();
 
-        Car2 userCar = new Car2(marka, model, yıl);
+        Constructor userCar = new Constructor(marka, model, yıl);
         userCar.displayInfo();
     }
 }
