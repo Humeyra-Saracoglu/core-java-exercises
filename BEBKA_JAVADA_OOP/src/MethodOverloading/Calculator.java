@@ -2,13 +2,13 @@ package MethodOverloading;
 
 public class Calculator {
 
-    public int add(int a, int b)
+    public int add(int x, int y)
     {
-        return a + b;
+        return x + y;
     }
 
-    public int add(int a, int b, int c)
+    public int add(int x, int y, int z)
     {
-        return a + b + c;
+        return x + y + z;
     }
 }
