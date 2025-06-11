@@ -16,12 +16,8 @@ public class bolme_islemi {
 
             int sonuc = sayi1 / sayi2;
             System.out.println("Sonuç: " + sonuc);
-        }
-
-        catch (ArithmeticException e)
-        {
+        } catch (ArithmeticException e) {
             System.out.println("Hata: Bir sayı sıfıra bölünemez!");
         }
-
     }
 }
