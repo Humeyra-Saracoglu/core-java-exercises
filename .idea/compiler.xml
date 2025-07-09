@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="BEBKA_JAVA_UYGULAMA" />
+        <module name="BEBKA_JAVA_VeriTabani_Temelleri" />
       </profile>
     </annotationProcessing>
   </component>
