@@ -1,9 +1,8 @@
 package org.example;
 
 import org.example.config.DataBaseConfig;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
+
+import java.sql.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +17,32 @@ public class Main {
             Statement statement = connection.createStatement();
             statement.execute(sql);
             System.out.println("Tablo oluşturuldu.");
-            
+
+            // Prepared Statement
+            String insertsql = "INSERT INTO users (name, email) VALUES (?, ?)";
+            PreparedStatement preparedStatement = connection.prepareStatement(insertsql);
+            preparedStatement.setString(1, "Helin");
+            preparedStatement.setString(2, "helin@gmail.com");
+            preparedStatement.execute();
+
+            preparedStatement.setString(1, "Sıla");
+            preparedStatement.setString(2, "sıla@gmail.com");
+            preparedStatement.execute();
+
+            //result set
+            String selectsql = "SELECT * FROM users";
+            PreparedStatement prepared = connection.prepareStatement(selectsql);
+            ResultSet resultSet = prepared.executeQuery();
+
+            while (resultSet.next()) {
+                System.out.println(resultSet.getInt("id"));
+                System.out.println(resultSet.getString("name"));
+                System.out.println(resultSet.getString("email"));
+                System.out.println("---------------------");
+            }
+
+            statement.close();
+            connection.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
