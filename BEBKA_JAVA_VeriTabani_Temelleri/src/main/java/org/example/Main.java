@@ -18,6 +18,7 @@ public class Main {
             Statement statement = connection.createStatement();
             statement.execute(sql);
             System.out.println("Tablo oluşturuldu.");
+            
         } catch (Exception e) {
             e.printStackTrace();
         }
