@@ -18,7 +18,7 @@ public class Main {
             statement.execute(sql);
             System.out.println("Tablo oluşturuldu.");
 
-            // Prepared Statement
+            // == Prepared Statement ==
             String insertsql = "INSERT INTO users (name, email) VALUES (?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(insertsql);
             preparedStatement.setString(1, "Helin");
@@ -29,7 +29,7 @@ public class Main {
             preparedStatement.setString(2, "sıla@gmail.com");
             preparedStatement.execute();
 
-            //result set
+            // == Result set ==
             String selectsql = "SELECT * FROM users";
             PreparedStatement prepared = connection.prepareStatement(selectsql);
             ResultSet resultSet = prepared.executeQuery();
@@ -41,8 +41,37 @@ public class Main {
                 System.out.println("---------------------");
             }
 
+            // === UPDATE İşlemleri ===
+            String updateSql = "UPDATE users SET name = ? WHERE id = ?";
+            PreparedStatement updateStatement = connection.prepareStatement(updateSql);
+            updateStatement.setString(1, "Güncellenmiş Helin");
+            updateStatement.setInt(2, 1); // id = 1 olan kullanıcıyı güncelledik
+            int updatedRows = updateStatement.executeUpdate();
+            System.out.println("Güncellenen satır sayısı: " + updatedRows);
+
+            // === DELETE İşlemleri ===
+            String deleteSql = "DELETE FROM users WHERE id = ?";
+            PreparedStatement deleteStatement = connection.prepareStatement(deleteSql);
+            deleteStatement.setInt(1, 2); // id = 2 olan kullanıcı sildik
+            int deletedRows = deleteStatement.executeUpdate();
+            System.out.println("Silinen satır sayısı: " + deletedRows);
+
+            // === Kontrol İşlemi için  ===
+            System.out.println("Güncelleme/Silme sonrası kullanıcılar:");
+            ResultSet finalResultSet = statement.executeQuery("SELECT * FROM users");
+            while (finalResultSet.next()) {
+                System.out.println(finalResultSet.getInt("id"));
+                System.out.println(finalResultSet.getString("name"));
+                System.out.println(finalResultSet.getString("email"));
+                System.out.println("---------------------");
+            }
+
+            // === Kapatmalar ===
+            updateStatement.close();
+            deleteStatement.close();
             statement.close();
             connection.close();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
