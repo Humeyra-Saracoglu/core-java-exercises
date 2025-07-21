@@ -12,7 +12,7 @@ public class DataBaseConnecterConfig {
         try{
             connection= DriverManager.getConnection(
                     DataBaseConfig.DATABASE_URL,
-                    DataBaseConfig.DATABASE_NAME,
+                    DataBaseConfig.DATABASE_USERNAME,
                     DataBaseConfig.DATABASE_PASSWORD
                     );
         } catch(Exception e){
