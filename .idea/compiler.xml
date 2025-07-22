@@ -6,9 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="BEBKA_HIBERNATE" />
         <module name="BEBKA_JAVA_UYGULAMA" />
         <module name="BEBKA_JAVA_VeriTabani_Temelleri" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Hibernate" target="24" />
+    </bytecodeTargetLevel>
   </component>
 </project>

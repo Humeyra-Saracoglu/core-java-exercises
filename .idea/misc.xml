@@ -6,7 +6,13 @@
       <list>
         <option value="$PROJECT_DIR$/BEBKA_JAVA_UYGULAMA/pom.xml" />
         <option value="$PROJECT_DIR$/BEBKA_JAVA_VeriTabani_Temelleri/pom.xml" />
+        <option value="$PROJECT_DIR$/BEBKA_HIBERNATE/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/BEBKA_JAVA_VeriTabani_Temelleri/Hibernate/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_24" default="true" project-jdk-name="openjdk-24" project-jdk-type="JavaSDK">
