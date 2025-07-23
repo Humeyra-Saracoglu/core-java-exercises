@@ -1,24 +1,25 @@
-package com.example;
+package org.example;
 
-import com.example.dao.UserDao;
-import com.example.entity.User;
+import org.example.dao.UserDao;
+import org.example.dao.impl.UserDaoImpl;
+import org.example.entity.User;
 
 public class Main {
     public static void main(String[] args) {
-        UserDao userDao = new UserDao();
+        UserDao userDao = new UserDaoImpl();
 
-        // CREATE
-        User user = new User("Helin", "helin@example.com");
-        userDao.createUser(user);
+        // 1. Create
+        User newUser = new User("Helin", "helin@example.com");
+        userDao.createUser(newUser);
 
-        // READ
-        User dbUser = userDao.getUserById(user.getId());
-        System.out.println("📄 Veritabanından gelen kullanıcı: " + dbUser.getName());
+        // 2. Read
+        User fetched = userDao.getUserById(newUser.getId());
 
-        // UPDATE
-        userDao.updateUserEmail(user.getId(), "yeni_mail@example.com");
+        // 3. Update
+        fetched.setEmail("helin.updated@example.com");
+        userDao.updateUser(fetched);
 
-        // DELETE
-        userDao.deleteUser(user.getId());
+        // 4. Delete
+        userDao.deleteUser(fetched);
     }
 }
