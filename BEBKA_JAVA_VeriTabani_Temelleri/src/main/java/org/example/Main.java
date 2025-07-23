@@ -1,9 +1,8 @@
 package org.example;
 
-import org.example.config.DataBaseConfig;
 import org.example.config.DataBaseConnecterConfig;
 import org.example.dao.UserDAOImpl;
-import org.example.user.User;
+import org.example.entity.User;
 
 import java.sql.*;
 import java.util.List;
